@@ -1,0 +1,82 @@
+.top-nav{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: $gutter-small;
+    background: transparent;
+    position: fixed;
+    z-index: 2000;
+    top:0;
+    width: 100%;
+   background: $dark;
+   @include respond-to(medium){
+        justify-content: initial;
+        padding: $gutter-medium;
+    }
+    @include respond-to(xlarge){
+        padding: $gutter-large;
+        justify-content: space-between;
+    }
+}
+.top-nav::after{
+    content: '';
+    display: block;
+    height: 1px;
+    background: #979797;;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @include respond-to(medium){
+        margin: $gutter-medium;
+    }
+    @include respond-to(xlarge){
+        margin: $gutter-large;
+    }
+}
+.top-nav ul{
+    display: none;
+    @include respond-to(xlarge){
+        display: flex;
+    }
+}
+.top-nav ul a:not(:last-child){
+    margin-right: 33px;
+}
+.top-nav ul li{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: 400;
+}
+.top-nav ul li:hover{
+    color: $feature;
+    cursor: pointer;
+}
+.top-nav .logo{
+    @include respond-to(medium){
+        margin-right: auto;
+        margin-left: 42px;
+    }
+    @include respond-to(xlarge){
+        display: initial;
+        margin-right: initial;
+        margin-left: 0;
+    }
+}
+.cart{
+    height: 20px;
+    width: 23px;
+    background: url('../images/shared/desktop/icon-cart.svg');
+}
+
+button.hamburger{
+    @include respond-to(xlarge){
+        display: none;
+    }
+}
+.top-nav--single{
+    background: $black;
+}

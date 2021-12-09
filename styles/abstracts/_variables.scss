@@ -1,0 +1,30 @@
+$orange-slight-tone: 	hsl(22, 65%, 57%);
+$orange-slight-tint: hsl(21, 94%, 75%);
+$black-slight-tint: 	hsl(0, 0%, 6%);
+$white-slight-tone: hsl(0, 0%, 95%);
+$almost-white: hsl(0, 0%, 98%);
+$black: hsl(100, 0%,0%);
+$white: hsl(0, 100%, 100%);
+
+$feature: $orange-slight-tone;
+$feature-light: $orange-slight-tint;
+$light: $white-slight-tone;
+$super-light: $almost-white;
+$dark: $black-slight-tint;
+
+$gutter-small: 0 24px;
+$gutter-medium: 0 40px 0 40px;
+$gutter-large:0 165px;
+
+$font-stack: (
+  'Manrope',
+  'Arial',
+  sans-serif,
+);
+
+$breakpoints: (
+  'small': (min-width: 400px),
+  'medium': (min-width: 520px),
+  'large': (min-width: 790px),
+  'xlarge': (min-width: 1200px),
+);

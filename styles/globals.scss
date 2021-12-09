@@ -1,0 +1,40 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import './abstracts/functions';
+
+@import './base/typography';
+@import './base/helper-classes';
+@import './base/reset';
+
+@import './components/add-to-cart';
+@import './components/buttons';
+// @import './components/cart-dropdown';
+// @import './components/cart-images';
+@import './components/hamburger';
+// @import './components/logo';
+@import './components/nav-dropdown';
+@import './components/page-label';
+// @import './components/product';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button.hamburger{
+  @include respond-to(xlarge){
+      display: none;
+  }
+}
